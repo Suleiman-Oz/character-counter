@@ -145,6 +145,12 @@ textarea {
   }
   .tick {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  .tick div {
+    padding: 0;
   }
 
   /* Status style */
