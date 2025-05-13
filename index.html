@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <img src="" alt="">
+            <h1>Character Counter</h1>
+        </div>
+        <div class="mood" style="width: 20px; background-color: #fff; height: 20px;">
+            <img src="" alt="">
+        </div>
+    </header>
+    <section class="hero">
+        <p>Analyze your text in real-time.</p>
+    </section>
+    <section class="input-text">
+        <textarea id="input-text" placeholder="Start typing... (or paste your text)"></textarea>
+    </section>
+    <section class="options">
+        <div class="tick">
+            <div>
+                <input type="checkbox" id="exclude-spaces" name="space">
+                <label for="space">Exclude Spaces</label>
+            </div>
+            <div>
+                <input type="checkbox" id="char-limit" name="char">
+                <label for="char">Set Character Limit</label>
+            </div>
+        </div>
+        <div>
+            <p>Approx. reading time: 0 minute</p>
+        </div>
+    </section>
+    <section class="status">
+        <div class="status-box">
+            <p class="stat-number" id="totalChars">00</p>
+            <p>Total Characters</p>
+        </div>
+        <div class="status-box">
+            <p class="stat-number" id="wordCount">00</p>
+            <p>Word Count</p>
+        </div>
+        <div class="status-box">
+            <p class="stat-number" id="sentenceCount">00</p>
+            <p>Sentence Count</p>
+        </div>
+    </section>
+    <section class="letter-density">
+        <h2>Letter Density</h2>
+        <div id="letterDensity"></div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
