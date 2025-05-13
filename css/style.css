@@ -1,155 +1,164 @@
-*,*::before,*::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 body {
-    background: #121417;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  background: #121417;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-header,section,textarea {
-    width: 90%;
-    max-width: 900px;
+header,
+section,
+textarea {
+  width: 90%;
+  max-width: 900px;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo-header {
-    display: flex;
+  display: flex;
 }
 .logo-header h1 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 /* Hero style */
 
 .hero {
-    width: 85%;
-    max-width: 540px;
-    margin: 0 auto;
+  width: 85%;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .hero p {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Textarea Text */
 
 .input-text {
-    width: 90%;
+  width: 90%;
 }
 textarea {
-    width: 100%;
-    height: 150px;
-    padding: 15px;
-    background: rgb(46, 45, 45);
-    color: rgb(172, 178, 184);
-    resize: none;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  background: rgb(46, 45, 45);
+  color: rgb(172, 178, 184);
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Option style */
 
 .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .tick div {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 .tick div:last-child {
-    padding-top: 0;
+  padding-top: 0;
 }
 .options div:last-child p {
-    padding-top: 0;
-    margin-top: 0;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* Status style */
 
 .status {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* Status box style */
 
 .status-box {
-    background: #815858;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-transform: capitalize;
-    width: 100%;
-    margin: 5px;
+  background: #815858;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 5px;
 }
 
 /* Status paragraph style */
 
 .status-box p {
-    font-size: 14px;
-    padding: 15px 0;
-    padding-left: 10px;
-    margin: 0;
+  font-size: 14px;
+  padding: 15px 0;
+  padding-left: 10px;
+  margin: 0;
 }
-  
+
 .status-box p:first-child {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /* Adding media query for Tablet and Laptop */
 
 @media (min-width: 768px) {
+  /* Title style */
+  .hero {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .hero p {
+    font-size: 60px;
+  }
 
-    /* Title style */
-    .hero {
-        width: 65%;
-        margin: 0 auto;
-    }
-    .hero p {
-        font-size: 60px;
-    }
-    
-    /* Input/Textarea style */
+  /* Input/Textarea style */
 
-    textarea {
-        height: 160px;
-    }
+  textarea {
+    height: 160px;
+  }
 
-    /* Status style */
-    .status {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        gap: 5px;
-        margin-bottom: 20px;
-    }
+  /* Option style */
 
-    /* Status box stlye */
+  .options {
+    flex-direction: row;
+  }
 
-    .status-box {
-        width: 33%;
-    }
-    .status-box:last-child {
-        margin-bottom: 0;
-    }
+  /* Status style */
+  .status {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  /* Status box stlye */
+
+  .status-box {
+    width: 33%;
+  }
+  .status-box:last-child {
+    margin-bottom: 0;
+  }
 }
