@@ -143,6 +143,9 @@ textarea {
   .options {
     flex-direction: row;
   }
+  .tick {
+    display: flex;
+  }
 
   /* Status style */
   .status {
