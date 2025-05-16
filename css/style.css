@@ -142,6 +142,8 @@ textarea {
 
   .options {
     flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
   }
   .tick {
     display: flex;
