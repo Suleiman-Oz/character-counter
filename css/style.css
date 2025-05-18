@@ -150,6 +150,7 @@ textarea {
     justify-content: center;
     align-items: center;
     gap: 3px;
+    background-color: orange;
   }
   .tick div {
     padding: 0;
